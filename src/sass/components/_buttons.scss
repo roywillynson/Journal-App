@@ -1,0 +1,86 @@
+
+.button {
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 7px 10px;
+    background-color: inherit;
+    color: inherit;
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      color: darken($white, 10);
+    }
+}
+
+.is-primary {
+    background-color: $primary;
+    color: $white;
+
+    &:disabled {
+        background-color: lighten($color: $primary, $amount: 15);
+    }
+
+    &:hover {
+        background-color: darken($color: $primary, $amount: 15);
+    }
+}
+
+.is-danger {
+  background-color: $danger;
+  color: $white;
+
+  &:disabled {
+      background-color: lighten($color: $danger, $amount: 15);
+  }
+
+  &:hover {
+      background-color: darken($color: $danger, $amount: 15);
+  }
+}
+
+
+// Button google
+.google-btn {
+  width: 100%;
+  cursor: pointer;
+  margin-top: 10px;
+  height: 42px;
+  background-color: $google-blue;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+
+  .google-icon-wrapper {
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: $white;
+  }
+  .google-icon {
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 11px;
+    width: 18px;
+    height: 18px;
+  }
+  .btn-text {
+    text-align: center;
+    margin: 11px 11px 0 40px;
+    color: $white;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+  }
+  &:hover {
+    box-shadow: 0 0 6px $google-blue;
+  }
+  &:active {
+    background: $button-active-blue;
+  }
+}

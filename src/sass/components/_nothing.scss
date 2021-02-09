@@ -1,0 +1,14 @@
+.nothing__main-content {
+    background-color: $primary;
+    color: $white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & p {
+        //font-weight: bold;
+        max-width: 200px;
+    }
+}
